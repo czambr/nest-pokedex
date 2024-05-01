@@ -20,13 +20,23 @@ $ npm install
 $ npm i -g @nestjs/cli
 ```
 
-4. Levantar la base de datos.
+4. Clonar el archivo `.env.template ` y renombrar la copia a `.env`.
+
+5. Llenar las variables de entorno definidas en el `.env`.
+
+6. Levantar la aplicacion en modo desarrollo:
+
+```bash
+ $ npm run start:dev
+```
+
+7. Levantar la base de datos.
 
 ```bash
 $ docker-compose up -d
 ```
 
-5. Reconstruir la base de datos con la semilla
+8. Reconstruir la base de datos con la semilla
 
 ```bash
 $ /api/v2/seed
